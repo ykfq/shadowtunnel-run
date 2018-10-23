@@ -26,7 +26,7 @@ else
 fi
 
 echo
-DOCKER_URL=https://mirrors.aliyun.com/docker-ce/linux/centos/7/x86_64/stable/Packages/docker-ce-${DOCKER_VERSION}.ce-1.el7.centos.x86_64.rpm
+DOCKER_URL=https://mirrors.ustc.edu.cn/docker-ce/linux/centos/7/x86_64/stable/Packages/docker-ce-${DOCKER_VERSION}.ce-1.el7.centos.x86_64.rpm
 curl --output /dev/null --silent --head --fail ${DOCKER_URL}
 if [[ $? != 0 ]]; then
     echo "Wrong version, docker-ce-${DOCKER_VERSION} does not exists, exit"
